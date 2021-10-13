@@ -1,0 +1,80 @@
+{
+	"FileNote": {
+		"prefix": "#fileNote",
+		"body": [
+			"/**",
+			" * @file        $TM_FILENAME",
+			" * @brief       $1",
+			" * @details     $2",
+			" * @author      Shane",
+			" * @date        $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			" * @version     1.0.0",
+			" * @copyright   Copyright (C), 2003-2030 \\n",
+			" *              All rights reserved ",
+			" * @par         Change log",
+			" * <table>",
+			" * <tr> <th> Date       <th> Version <th> Author <th> Review <th> Description             <th>",
+			" * <tr> <th> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE <td> 1.0.0   <td> Shane  <td>        <td> Create                  <td>",
+			" * </table>",
+			" */",
+			"$0"
+		],
+		"description": "File header comments"
+	},
+	"GroupNoteStart": {
+		"prefix": "#groupNoteStart",
+		"body": [
+			"/**",
+			" * @defgroup $1",
+			" * @brief    $2",
+			" * @details  $3",
+			" * @defgroup $4",
+			" * @ingroup  $5",
+			" * @{",
+			" * /",
+			"$0"
+		],
+		"description": "doxgen comment group start. Default javadoc style."
+	},
+	"FuncNote": {
+		"prefix": "#funcNote",
+		"body": [
+			"/**",
+			" * @brief        $1",
+			" * @details      $2",
+			" * @param[in]    $3",
+			" * @param[in]    $4",
+			" * @param[out]   $5",
+			" * @return       $6",
+			" * @retval       $7",
+			" * @retval       $8",
+			" */",
+		]
+	},
+	"LineNote": {
+		"prefix": "#lineNote",
+		"body": [
+			"///<"
+		],
+		"description": "Javadoc line comment"
+	},
+	"CFileHeader": {
+		"prefix": "#hHeader",
+		"body": [
+			"#ifndef _$1_H_",
+			"#define _$1_H_",
+			"",
+			"#ifdef __cplusplus ///< use C compiler",
+			"extern \"C\"{",
+			"#endif",
+			"",
+			"",
+			"",
+			"#ifdef __cplusplus ///< use C compiler",
+			"}",
+			"#endif",
+			"",
+			"#endif"
+		]
+	},
+}
